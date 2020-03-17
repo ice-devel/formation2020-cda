@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- appliquer du css via la balise style -->
+    <style>
+        /* sélecteur par tag : sélection de tous
+        les divs de la page */
+        div {
+            border: 2px solid #000000;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* sélecteur par identifiant */
+        #round {
+            border-radius: 10px;
+        }
+
+        /* sélecteur par classes */
+        .back-red {
+            background-color: red;
+        }
+
+        .shadow {
+            box-shadow: 10px 5px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <p style="color:#ce51c8;font-size:35px">
+        Ceci est le premier paragraphe avec
+        du style "inline"
+    </p>
+
+    <div>
+        Div 1
+    </div>
+
+    <div class="back-red">
+        Div 2
+    </div>
+
+    <div id="round" class="back-red shadow">
+        Div 3
+    </div>
+</body>
+</html>
