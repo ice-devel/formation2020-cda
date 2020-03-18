@@ -6,7 +6,25 @@
 
     <!-- appliquer du css via la balise style -->
     <style>
+        #div1 {
+            color: red;
+        }
 
+        .bordure {
+            border: 1px solid green;
+        }
+
+        .fond_vert {
+            background-color: #558013;
+        }
+
+        div {
+            margin-top: 25px;
+        }
+
+        img {
+            max-width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -15,10 +33,10 @@
      1bis- Mettez une couleur de fond sur la liste à puces grâce à du style "inline"
 
      2- Créer un div qui contient une image et un paragraphe,
-     et donnez l'id div1 à ce bloc
+     et donnez l'id "div1" à ce bloc
      2bis- Mettez du style pour l'élément qui a l'id "div1" : couleur de texte en rouge
 
-     3- Créer un paragraphe qui a les classes "bordure et fond_vert"
+     3- Créer un paragraphe qui a les classes "bordure" et "fond_vert"
 
      4- Créer un div qui a la classe "bordure"
 
@@ -28,5 +46,30 @@
 
      6- Mettez une marge en haut de 25px pour chaque div avec le selecteur par tag
      -->
+
+    <div>
+        <ul style="background-color:purple;">
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+        </ul>
+    </div>
+
+    <div id="div1">
+        <img src="https://img.over-blog-kiwi.com/3/01/95/52/20190206/ob_861e9b_singe-tigre-1.jpg"
+             alt="Ma photo" />
+        <p>
+            Texte du p
+        </p>
+    </div>
+
+    <p class="bordure fond_vert">
+        Paragraphe à double classe
+    </p>
+
+    <div class="bordure">
+        Div avec classe bordure
+    </div>
 </body>
 </html>

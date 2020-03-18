@@ -1,0 +1,57 @@
+div {
+    color: red;
+}
+
+/** si une propriété est définie deux fois pour un élément,
+c'est la dernière qui prend le dessus */
+div {
+    color: green;
+}
+
+/* Sélecteur ID > Sélecteur Classe > Sélecteur Tag */
+#div1 {
+    border: 1px solid gray;
+    font-weight: bold;
+    padding: 20px !important;
+}
+
+.bordure {
+    border: 1px solid orange;
+    font-style: italic;
+    padding: 10px !important;
+    /* le div1 sera en italic car il a la classe bordure, et que le
+    sélecteur par identifiant #div1 ne redéfinit pas font-style */
+}
+
+div {
+    border: 1px solid yellow;
+    padding: 30px !important;
+}
+
+/* sélection d'éléments qui se trouvent dans d'autres éléments :
+parent enfant petit-enfant : le style s'applique sur le petit-enfant
+ */
+div p {
+    color: green;
+}
+
+/* les images, dans les liens, dans les éléments avec la classe bordure, dans un span,
+dans un paragraphe, dans le div1
+ */
+#div1 p span .bordure a img {
+
+}
+
+/* Les images qui ont la classe bordure */
+img.bordure {
+
+}
+/* Les images qui ont la classe bordure et qui ont aussi la classe bordure2 */
+img.bordure.bordure2 {
+
+}
+
+/* les spans qui ont la classe rouge */
+span.rouge {
+    color: red;
+}

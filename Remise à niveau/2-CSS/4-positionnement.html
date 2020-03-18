@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- inclure une feuille de style externe dans cette page -->
+    <link rel="stylesheet" href="positionnement.css" />
+</head>
+<body>
+    <!-- position : fixed
+    l'élément a toujours la même place dans l'écran même on scrolle sur la page
+    -->
+    <div class="nav">
+        <a href="">Lien 1</a>
+        <a href="">Lien 2</a>
+        <a href="">Lien 3</a>
+    </div>
+
+    <!-- les divs sont pas défaut en display block :
+    toute la largeur + les uns en dessous des autres -->
+    <div>Div 1</div>
+
+    <div>Div 2</div>
+
+    <p>Paragraphe 1</p>
+
+    <div>
+        <!-- les spans sont pas défaut en display inline :
+        largeur auto du contenu + les uns à côté des autres -->
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+    </div>
+
+    <!-- les coordonnées de ce div ont pour référence le body -->
+    <div class="absolue">
+        <a href="">Nous contacter</a>
+    </div>
+
+    <div class="relative" style="height:50px">
+        <!-- les coordonnées de ce div ont pour référence le premier élément
+         parent qui est en position relative -->
+        <div class="absolue">
+            <a href="">Demander un devis</a>
+        </div>
+    </div>
+
+    <!-- les éléments en position absolue et fixed sortent du flux :
+    ils peuvent donc chevaucher d'autres éléments dans la page -->
+</body>
+</html>
