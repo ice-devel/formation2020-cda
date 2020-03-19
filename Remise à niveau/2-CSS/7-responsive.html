@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7 - Responsive</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        /* style appliqué uniquement sur les écrans d'au moins 641px */
+        @media screen and (min-width: 641px) {
+            .container div {
+                flex-grow: 1;
+            }
+        }
+
+        /* style appliqué uniquement sur les écrans de maximum 640px */
+        @media screen and (max-width: 640px) {
+            .container {
+                flex-wrap: wrap;
+            }
+            .container div {
+                flex-basis: 50%;
+                color:red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1 Salut tout le monde Salut tout le monde</div>
+        <div>2 Salut tout le monde Salut tout le monde</div>
+        <div>3 Salut tout le monde Salut tout le monde</div>
+        <div>4 Salut tout le monde Salut tout le monde</div>
+    </div>
+</body>
+</html>
